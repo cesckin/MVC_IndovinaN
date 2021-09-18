@@ -23,9 +23,6 @@ public class Controller implements ActionListener {
 		// TODO Auto-generated method stub
 		
 		int numTentativi = tentativi.getTentativi();
-		
-		System.out.println(numTentativi);
-		
 		if (e.getActionCommand().equalsIgnoreCase("Invia")) {
 
 			String numeroTirato = grafica.getTxtNumero().getText();
