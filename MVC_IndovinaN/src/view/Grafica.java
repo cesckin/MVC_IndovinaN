@@ -125,6 +125,14 @@ public class Grafica {
 		this.txtNumero = txtNumero;
 	}
 
+	public JButton getBtnInvia() {
+		return btnInvia;
+	}
+
+	public void setBtnInvia(JButton btnInvia) {
+		this.btnInvia = btnInvia;
+	}
+
 	public void registraController(Controller controller) {
 		btnInvia.addActionListener(controller);
 		btnReset.addActionListener(controller);

@@ -50,6 +50,7 @@ public class Controller implements ActionListener {
 					grafica.getLblScore().setText("" + numTentativi);
 				} else
 					grafica.getLblTesto().setText("Hai perso :(");
+					grafica.getBtnInvia().setEnabled(false);
 
 			} catch (NumberFormatException ex) {
 				ex.printStackTrace();
