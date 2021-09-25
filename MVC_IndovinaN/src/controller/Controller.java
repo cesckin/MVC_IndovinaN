@@ -23,18 +23,19 @@ public class Controller implements ActionListener {
 		// TODO Auto-generated method stub
 
 		int numTentativi = tentativi.getTentativi();
+
 		if (e.getActionCommand().equalsIgnoreCase("Invia")) {
-
-			int n = -99;
+			int numTirato = -99;
+			
 			try {
-
 				String numeroTirato = grafica.getTxtNumero().getText();
-				int numTirato = Integer.parseInt(numeroTirato);
-
+				numTirato = Integer.parseInt(numeroTirato);
 				int flag = tentativi.checkNumber(numTirato);
 
-				if (numTentativi >= 0) {
+				if (numTentativi >= 1) {
 					switch (flag) {
+					case 99:
+						break;
 					case 1:
 						tentativi.decrementaTentativi();
 						grafica.getLblTesto().setText("Prova con un numero minore !");
@@ -49,20 +50,21 @@ public class Controller implements ActionListener {
 					}
 					grafica.getLblScore().setText("" + numTentativi);
 				} else {
+					grafica.getLblScore().setText("0");
 					grafica.getLblTesto().setText("Hai perso :(");
 					grafica.getBtnInvia().setEnabled(false);
 				}
-
 			} catch (NumberFormatException ex) {
 				ex.printStackTrace();
 			}
-			if (n == -99) {
+			if (numTirato == -99) {
 				grafica.getLblTesto().setText("! Attenzione inserire valore numerico !");
 			}
 		}
 
 		if (e.getActionCommand().equalsIgnoreCase("Reset")) {
 
+			grafica.getLblTesto().setText("Benvenuto :)");
 			tentativi.generaNumero();
 			grafica.getLblScore().setText("" + numTentativi);
 			grafica.getBtnInvia().setEnabled(true);
