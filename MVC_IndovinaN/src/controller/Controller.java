@@ -16,7 +16,7 @@ public class Controller implements ActionListener {
 		this.tentativi = tentativi;
 		grafica.registraController(this);
 		tentativi.generaNumero();
-		grafica.getLblTesto().setText("Benvenuto :)");
+		grafica.getLblTesto().setText("Benvenuto :) 0-50");
 	}
 
 	@Override
@@ -30,7 +30,7 @@ public class Controller implements ActionListener {
 				numTirato = Integer.parseInt(numeroTirato);
 				int flag = tentativi.checkNumber(numTirato);
 
-				if (tentativi.getTentativi() >= 1) {
+				if (tentativi.getTentativi() > 1) {
 					switch (flag) {
 					case 99:
 						break;
@@ -49,6 +49,7 @@ public class Controller implements ActionListener {
 					grafica.getLblScore().setText("" + tentativi.getTentativi());
 				} else {
 					grafica.getLblTesto().setText("Hai perso :(");
+					grafica.getLblScore().setText("0");
 					grafica.getBtnInvia().setEnabled(false);
 				}
 			} catch (NumberFormatException ex) {
@@ -63,7 +64,7 @@ public class Controller implements ActionListener {
 			tentativi.generaNumero();
 			int numTentativi = tentativi.getTentativi();
 			grafica.getTxtNumero().setText(null);
-			grafica.getLblTesto().setText("Benvenuto :)");
+			grafica.getLblTesto().setText("Benvenuto :) 0-50");
 			grafica.getLblScore().setText("" + numTentativi);
 			grafica.getBtnInvia().setEnabled(true);
 
