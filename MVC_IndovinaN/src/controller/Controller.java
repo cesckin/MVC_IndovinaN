@@ -16,6 +16,7 @@ public class Controller implements ActionListener {
 		this.tentativi = tentativi;
 		grafica.registraController(this);
 		tentativi.generaNumero();
+		grafica.getLblTesto().setText("Benvenuto :)");
 	}
 
 	@Override
@@ -23,14 +24,13 @@ public class Controller implements ActionListener {
 		// TODO Auto-generated method stub
 
 		if (e.getActionCommand().equalsIgnoreCase("Invia")) {
-			int numTentativi = tentativi.getTentativi();
 			int numTirato = -99;
 			try {
 				String numeroTirato = grafica.getTxtNumero().getText();
 				numTirato = Integer.parseInt(numeroTirato);
 				int flag = tentativi.checkNumber(numTirato);
 
-				if (numTentativi >= 1) {
+				if (tentativi.getTentativi() >= 1) {
 					switch (flag) {
 					case 99:
 						break;
@@ -46,9 +46,8 @@ public class Controller implements ActionListener {
 						grafica.getLblTesto().setText("Hai vinto :)");
 						break;
 					}
-					grafica.getLblScore().setText("" + numTentativi);
+					grafica.getLblScore().setText("" + tentativi.getTentativi());
 				} else {
-					grafica.getLblScore().setText("0");
 					grafica.getLblTesto().setText("Hai perso :(");
 					grafica.getBtnInvia().setEnabled(false);
 				}
@@ -61,9 +60,10 @@ public class Controller implements ActionListener {
 		}
 
 		if (e.getActionCommand().equalsIgnoreCase("Reset")) {
-			int numTentativi = tentativi.getTentativi();
-			grafica.getLblTesto().setText("Benvenuto :)");
 			tentativi.generaNumero();
+			int numTentativi = tentativi.getTentativi();
+			grafica.getTxtNumero().setText(null);
+			grafica.getLblTesto().setText("Benvenuto :)");
 			grafica.getLblScore().setText("" + numTentativi);
 			grafica.getBtnInvia().setEnabled(true);
 
