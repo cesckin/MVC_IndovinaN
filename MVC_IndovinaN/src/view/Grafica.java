@@ -52,7 +52,7 @@ public class Grafica {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		
+
 		frame = new JFrame();
 		frame.getContentPane().setBackground(new Color(240, 248, 255));
 		frame.setBounds(100, 100, 264, 163);
@@ -77,19 +77,19 @@ public class Grafica {
 		});
 		btnInvia.setBounds(20, 92, 70, 23);
 		frame.getContentPane().add(btnInvia);
-		
+
 		lblTesto = new JLabel("");
 		lblTesto.setForeground(new Color(0, 0, 128));
 		lblTesto.setBounds(10, 11, 230, 19);
 		frame.getContentPane().add(lblTesto);
-		
+
 		lblScore = new JLabel("");
 		lblScore.setForeground(Color.RED);
 		lblScore.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblScore.setHorizontalAlignment(SwingConstants.CENTER);
 		lblScore.setBounds(185, 61, 48, 30);
 		frame.getContentPane().add(lblScore);
-		
+
 		btnReset = new JButton("Reset");
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -137,7 +137,7 @@ public class Grafica {
 		btnInvia.addActionListener(controller);
 		btnReset.addActionListener(controller);
 	}
-	
+
 	public void setVisible(boolean bho) {
 		frame.setVisible(bho);
 	}

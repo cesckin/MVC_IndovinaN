@@ -22,11 +22,9 @@ public class Controller implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 
-		int numTentativi = tentativi.getTentativi();
-
 		if (e.getActionCommand().equalsIgnoreCase("Invia")) {
+			int numTentativi = tentativi.getTentativi();
 			int numTirato = -99;
-			
 			try {
 				String numeroTirato = grafica.getTxtNumero().getText();
 				numTirato = Integer.parseInt(numeroTirato);
@@ -63,7 +61,7 @@ public class Controller implements ActionListener {
 		}
 
 		if (e.getActionCommand().equalsIgnoreCase("Reset")) {
-
+			int numTentativi = tentativi.getTentativi();
 			grafica.getLblTesto().setText("Benvenuto :)");
 			tentativi.generaNumero();
 			grafica.getLblScore().setText("" + numTentativi);
