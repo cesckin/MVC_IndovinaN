@@ -27,13 +27,13 @@ public class Controller implements ActionListener {
 
 			int n = -99;
 			try {
-				
+
 				String numeroTirato = grafica.getTxtNumero().getText();
 				int numTirato = Integer.parseInt(numeroTirato);
 
 				int flag = tentativi.checkNumber(numTirato);
 
-				if (numTentativi >= 1) {
+				if (numTentativi >= 0) {
 					switch (flag) {
 					case 1:
 						tentativi.decrementaTentativi();
@@ -48,9 +48,10 @@ public class Controller implements ActionListener {
 						break;
 					}
 					grafica.getLblScore().setText("" + numTentativi);
-				} else
+				} else {
 					grafica.getLblTesto().setText("Hai perso :(");
 					grafica.getBtnInvia().setEnabled(false);
+				}
 
 			} catch (NumberFormatException ex) {
 				ex.printStackTrace();
@@ -64,6 +65,7 @@ public class Controller implements ActionListener {
 
 			tentativi.generaNumero();
 			grafica.getLblScore().setText("" + numTentativi);
+			grafica.getBtnInvia().setEnabled(true);
 
 		}
 	}
