@@ -1,6 +1,7 @@
 package main;
 
 import controller.Controller;
+import controller.Logger;
 import model.Tentativi;
 import view.Grafica;
 
@@ -10,7 +11,8 @@ public class Main {
 		// TODO Auto-generated method stub
 		Grafica g = new Grafica();
 		Tentativi t = new Tentativi();
-		Controller c = new Controller(g, t);
+		Logger l = new Logger();
+		Controller c = new Controller(g, t, l);
 		g.setVisible(true);
 	}
 

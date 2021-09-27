@@ -1,0 +1,78 @@
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha premuto invia
+2021/09/27 16:51:42.145 Utente ha tirato il numero 3
+2021/09/27 16:51:42.145 Utente deve provare con numero maggiore 
+2021/09/27 16:51:42.145 Utente ha 9 tentativi
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha premuto invia
+2021/09/27 16:51:42.145 Utente ha tirato il numero 3
+2021/09/27 16:51:42.145 Utente deve provare con numero maggiore 
+2021/09/27 16:51:42.145 Utente ha 8 tentativi
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha premuto invia
+2021/09/27 16:51:42.145 Utente ha tirato il numero 3
+2021/09/27 16:51:42.145 Utente deve provare con numero maggiore 
+2021/09/27 16:51:42.145 Utente ha 7 tentativi
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha premuto invia
+2021/09/27 16:51:42.145 Utente ha tirato il numero 3
+2021/09/27 16:51:42.145 Utente deve provare con numero maggiore 
+2021/09/27 16:51:42.145 Utente ha 6 tentativi
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha resettato la partita! 
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha premuto invia
+2021/09/27 16:51:42.145 Utente ha inserito un valore non numerico! 
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha premuto invia
+2021/09/27 16:51:42.145 Utente ha tirato il numero 3
+2021/09/27 16:51:42.145 Utente deve provare con numero maggiore 
+2021/09/27 16:51:42.145 Utente ha 9 tentativi
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha premuto invia
+2021/09/27 16:51:42.145 Utente ha tirato il numero 3
+2021/09/27 16:51:42.145 Utente deve provare con numero maggiore 
+2021/09/27 16:51:42.145 Utente ha 8 tentativi
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha premuto invia
+2021/09/27 16:51:42.145 Utente ha tirato il numero 3
+2021/09/27 16:51:42.145 Utente deve provare con numero maggiore 
+2021/09/27 16:51:42.145 Utente ha 7 tentativi
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha premuto invia
+2021/09/27 16:51:42.145 Utente ha tirato il numero 3
+2021/09/27 16:51:42.145 Utente deve provare con numero maggiore 
+2021/09/27 16:51:42.145 Utente ha 6 tentativi
+2021/09/27 16:51:42.145 Inizio game
+2021/09/27 16:51:42.145 Utente ha resettato la partita! 
+2021/09/27 16:54:25.962 Inizio game
+2021/09/27 16:54:25.962 Utente ha premuto invia
+2021/09/27 16:54:25.962 Utente ha tirato il numero 25
+2021/09/27 16:54:25.962 Utente deve provare con numero maggiore 
+2021/09/27 16:54:25.962 Utente ha 9 tentativi
+2021/09/27 16:54:25.962 Utente ha premuto invia
+2021/09/27 16:54:25.962 Utente ha tirato il numero 35
+2021/09/27 16:54:25.962 Utente deve provare con numero maggiore 
+2021/09/27 16:54:25.962 Utente ha 8 tentativi
+2021/09/27 16:54:25.962 Utente ha premuto invia
+2021/09/27 16:54:25.962 Utente ha tirato il numero 45
+2021/09/27 16:54:25.962 Utente deve provare con numero minore 
+2021/09/27 16:54:25.962 Utente ha 7 tentativi
+2021/09/27 16:54:25.962 Utente ha premuto invia
+2021/09/27 16:54:25.962 Utente ha tirato il numero 40
+2021/09/27 16:54:25.962 Utente deve provare con numero maggiore 
+2021/09/27 16:54:25.962 Utente ha 6 tentativi
+2021/09/27 16:54:25.962 Utente ha premuto invia
+2021/09/27 16:54:25.962 Utente ha tirato il numero 43
+2021/09/27 16:54:25.962 Utente deve provare con numero maggiore 
+2021/09/27 16:54:25.962 Utente ha 5 tentativi
+2021/09/27 16:54:25.962 Utente ha premuto invia
+2021/09/27 16:54:25.962 Utente ha tirato il numero 44
+2021/09/27 16:54:25.962 Utente ha vinto la partita! 
+2021/09/27 16:54:25.962 Utente ha 5 tentativi
+2021/09/27 16:54:25.962 Utente ha resettato la partita! 
+2021/09/27 16:54:25.962 Utente ha premuto invia
+2021/09/27 16:54:25.962 Utente ha tirato il numero 4
+2021/09/27 16:54:25.962 Utente deve provare con numero maggiore 
+2021/09/27 16:54:25.962 Utente ha 9 tentativi
+2021/09/27 16:56:46.967 Inizio game
