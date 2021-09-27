@@ -55,18 +55,18 @@ public class Grafica {
 
 		frame = new JFrame();
 		frame.getContentPane().setBackground(new Color(240, 248, 255));
-		frame.setBounds(100, 100, 264, 163);
+		frame.setBounds(100, 100, 270, 199);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
 		txtNumero = new JTextField();
 		txtNumero.setHorizontalAlignment(SwingConstants.CENTER);
-		txtNumero.setBounds(76, 51, 35, 30);
+		txtNumero.setBounds(68, 64, 35, 30);
 		frame.getContentPane().add(txtNumero);
 		txtNumero.setColumns(10);
 
 		lblTentativi = new JLabel("Tentativi");
-		lblTentativi.setBounds(185, 41, 55, 14);
+		lblTentativi.setBounds(137, 39, 55, 14);
 		frame.getContentPane().add(lblTentativi);
 
 		btnInvia = new JButton("Invia");
@@ -75,19 +75,19 @@ public class Grafica {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnInvia.setBounds(20, 92, 70, 23);
+		btnInvia.setBounds(10, 128, 70, 23);
 		frame.getContentPane().add(btnInvia);
 
 		lblTesto = new JLabel("");
 		lblTesto.setForeground(new Color(0, 0, 128));
-		lblTesto.setBounds(10, 11, 230, 19);
+		lblTesto.setBounds(10, 11, 236, 19);
 		frame.getContentPane().add(lblTesto);
 
 		lblScore = new JLabel("");
 		lblScore.setForeground(Color.RED);
 		lblScore.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lblScore.setHorizontalAlignment(SwingConstants.CENTER);
-		lblScore.setBounds(185, 61, 48, 30);
+		lblScore.setBounds(137, 64, 48, 30);
 		frame.getContentPane().add(lblScore);
 
 		btnReset = new JButton("Reset");
@@ -96,8 +96,13 @@ public class Grafica {
 			}
 		});
 		btnReset.setBackground(new Color(250, 128, 114));
-		btnReset.setBounds(100, 92, 70, 23);
+		btnReset.setBounds(90, 128, 70, 23);
 		frame.getContentPane().add(btnReset);
+		
+		JButton btnLog = new JButton("Log");
+		btnLog.setBackground(Color.ORANGE);
+		btnLog.setBounds(169, 128, 71, 23);
+		frame.getContentPane().add(btnLog);
 
 	}
 
