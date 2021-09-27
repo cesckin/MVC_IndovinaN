@@ -20,6 +20,7 @@ public class Grafica {
 	private JFrame frame;
 	private JButton btnInvia;
 	private JButton btnReset;
+	private JButton btnLog;
 	private JLabel lblTentativi;
 	private JLabel lblTesto;
 	private JLabel lblScore;
@@ -99,7 +100,7 @@ public class Grafica {
 		btnReset.setBounds(90, 128, 70, 23);
 		frame.getContentPane().add(btnReset);
 		
-		JButton btnLog = new JButton("Log");
+		btnLog = new JButton("Log");
 		btnLog.setBackground(Color.ORANGE);
 		btnLog.setBounds(169, 128, 71, 23);
 		frame.getContentPane().add(btnLog);
@@ -141,6 +142,7 @@ public class Grafica {
 	public void registraController(Controller controller) {
 		btnInvia.addActionListener(controller);
 		btnReset.addActionListener(controller);
+		btnLog.addActionListener(controller);
 	}
 
 	public void setVisible(boolean bho) {

@@ -78,6 +78,7 @@ public class Controller implements ActionListener {
 		}
 		
 		if (e.getActionCommand().equalsIgnoreCase("Log")) {
+			logger.showLog();
 		}
 	}
 }
