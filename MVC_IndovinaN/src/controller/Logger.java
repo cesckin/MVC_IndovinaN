@@ -67,15 +67,15 @@ public class Logger {
 			
 		}
 		*/
-		
-		File f = new File("C:/Users/Francesco/git/MVC_IndovinaN/MVC_IndovinaN/bin/GameLog.txt");
+		/*
+		File f = new File("C:/Users/Francesco/git/MVC_IndovinaN/MVC_IndovinaN/GameLog.txt");
 
 		if (f.renameTo(new File("2021.txt")))
 		System.out.println("This file has been renamed.");
 
 		else
 		System.out.println("This file has not been renamed");
-		  
+		  */
 		
 	}
 

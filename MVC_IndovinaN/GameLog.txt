@@ -31,3 +31,4 @@
 2021/09/28 11:35:38.999 Utente ha tirato il numero 5
 2021/09/28 11:35:38.999 Utente deve provare con numero maggiore 
 2021/09/28 11:35:38.999 Utente ha 2 tentativi
+2021/09/28 11:37:42.351 Inizio game
