@@ -52,31 +52,12 @@ public class Logger {
 	}
 
 	public void renameLog() {
-		
 		/*
-		String percorso = Logger.class.getProtectionDomain().getCodeSource().getLocation().getPath() + "../";
-
-		// Path oldFile = Paths.get(percorso + "GameLog.txt");
-		Path oldFile = Paths.get("C:/Users/Francesco/git/MVC_IndovinaN/MVC_IndovinaN/bin/../GameLog.txt");
-
-		try {
-			Files.move(oldFile, oldFile.resolveSibling("2021.txt"));
-			System.out.println("File Successfully Rename");
-		} catch (IOException e) {
-			System.out.println("operation failed");
-			
-		}
+		File freader = new File ("GameLog.txt");
+		File fDest = new File ("2032.txt");
+		boolean renameTo = fSource.(fDest);
+		System.out.println(renameTo);
 		*/
-		/*
-		File f = new File("C:/Users/Francesco/git/MVC_IndovinaN/MVC_IndovinaN/GameLog.txt");
-
-		if (f.renameTo(new File("2021.txt")))
-		System.out.println("This file has been renamed.");
-
-		else
-		System.out.println("This file has not been renamed");
-		  */
-		
 	}
 
 }

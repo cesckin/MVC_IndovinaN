@@ -19,6 +19,8 @@ public class Controller implements ActionListener {
 		grafica.registraController(this);
 		tentativi.generaNumero();
 		grafica.getLblTesto().setText("Benvenuto :) 0-50");
+		logger.renameLog();
+		logger.deleteLog();
 		logger.makeLog("" + tentativi.getOra() + " Inizio game\n");
 	}
 
@@ -68,8 +70,6 @@ public class Controller implements ActionListener {
 		}
 
 		if (e.getActionCommand().equalsIgnoreCase("Reset")) {
-			logger.deleteLog();
-			logger.renameLog();
 			logger.makeLog("" + tentativi.getOra() + " Utente ha resettato la partita! \n");
 			tentativi.generaNumero();
 			int numTentativi = tentativi.getTentativi();
