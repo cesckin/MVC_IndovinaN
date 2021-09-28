@@ -68,6 +68,8 @@ public class Controller implements ActionListener {
 		}
 
 		if (e.getActionCommand().equalsIgnoreCase("Reset")) {
+			logger.deleteLog();
+			logger.renameLog();
 			logger.makeLog("" + tentativi.getOra() + " Utente ha resettato la partita! \n");
 			tentativi.generaNumero();
 			int numTentativi = tentativi.getTentativi();

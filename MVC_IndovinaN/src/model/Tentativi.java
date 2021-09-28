@@ -6,9 +6,6 @@ import java.util.Date;
 
 public class Tentativi {
 
-	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss.SSS");
-	Date date = new Date();
-
 	private String ora;
 	private int numeroTentativi;
 	private int numeroGenerato;
@@ -43,6 +40,8 @@ public class Tentativi {
 	}
 
 	public String getOra() {
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss.SSS");
+		Date date = new Date();
 		ora = dateFormat.format(date);
 		return ora;
 	}
