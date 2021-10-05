@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Logger {
 
@@ -52,12 +55,24 @@ public class Logger {
 	}
 
 	public void renameLog() {
-		/*
-		File freader = new File ("GameLog.txt");
-		File fDest = new File ("2032.txt");
-		boolean renameTo = fSource.(fDest);
-		System.out.println(renameTo);
-		*/
+		DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+		Date date = new Date();
+		String ora = dateFormat.format(date);
+		try {
+			FileReader filereader = new FileReader ("GameLog.txt");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			FileWriter fileriter = new FileWriter (ora+".txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//boolean renameTo = fSource.(fDest);
+		//System.out.println(renameTo);
+		
 	}
 
 }
